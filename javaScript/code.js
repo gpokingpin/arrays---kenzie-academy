@@ -46,15 +46,10 @@ console.log("Exercise Three");
 // - Then Log the length of the array to the console (it should print 5)
 // Write your code here 👇
 
-let colorsArray = [];
-
-colorsArray.push("red")
-colorsArray.push("green")
-colorsArray.push("blue")
-colorsArray.push("orange")
-colorsArray.push("black")
+let colorsArray = ["red", "green", "blue", "orange", "black"];
 
 console.log(colorsArray)
+console.log(colorsArray.length)
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Four");
 // Updating an array
@@ -66,29 +61,21 @@ let names = []; // Don't modify this line.
 let index = 2;
 // Write your code here 👇
 
-//declre variable
-let nameArray = []
-
 // add five names to the array
-nameArray.push("James")
-nameArray.push("Maverick")
-nameArray.push("Alexander")
-nameArray.push("Michael")
-nameArray.push("Steven")
+names.push("James")
+names.push("Maverick")
+names.push("Alexander")
+names.push("Michael")
+names.push("Steven")
 
 //console log array
-console.log(nameArray)
+console.log(names)
 
 //modify name within the array
 
-let name = 3
+names[index] = "Zayden"
 
-nameArray[name] = "Zayden"
-
-console.log(nameArray)
-
-
-
+console.log(names)
 
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Five");
@@ -100,10 +87,10 @@ console.log("Exercise Five");
 let firstArray = ["This", "will", "make"];
 let secondArray = ["a", "combined", "array."];
 // Write your code here 👇
+let combination =firstArray.concat(secondArray);
 
 // concatinating the second array to the first array
-console.log(firstArray + ' ' + (secondArray))
-
+console.log(combination)
 
 // When you are done with all of the exercises, check your console output to make sure it
 // matches the expected output of each exercise and remove any extranneous console.log()
